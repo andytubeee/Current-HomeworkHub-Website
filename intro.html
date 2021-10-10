@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Intro Programs</title>
+	<link rel="icon" href="logo.png">
+	<link rel="stylesheet" type="text/css" href="page_one.css">
+	<link href="action_page.php">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300&display=swap" rel="stylesheet">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+<body>
+	<script>
+ 			 AOS.init();
+ 			 AOS.init({
+ 			 	duration: 1000,
+ 			 	offset: 120,
+ 			 	throttleDelay: 200,
+ 			 });
+		</script>
+	<div class="top">
+	<a onclick="expend()"><img class="extend" src="https://image.flaticon.com/icons/png/128/1828/1828859.png"></a>
+
+	<a href="index.html">
+	<button type="button" class="menu" id="home">Home</button>
+	</a>
+	
+	<a href="#abt">
+	<button type="button" class="menu" id="about">About</button>
+	</a>
+	
+	<a href="#container_7">
+	<button type="button" class="menu" id="portfolio" onclick="enrollSc()" > Student Registration</button>
+	</a>
+
+	<a href="#container_8">
+	<button type="button" class="menu" id="portfolio" onclick="enrollTr()" > Tutor Registration</button>
+	</a>
+
+	<a href="#first">
+	<button type="button" class="menu" id="atd">Courses</button>
+	</a>
+	
+	<a href="#paris">
+	<button type="button" class="menu" id="team">Team</button>
+	</a>
+
+	<a href="#qna">
+	<button type="button" class="menu" id="news">Questions</button>
+	</a>
+	
+	</div>
+</div>
+
+	<div id="top2">
+		<a href="index.html">
+		<button type="button" class="menu2" id="home">Home</button><br>
+		</a>
+		
+		<a href="#abt">
+		<button type="button" class="menu2" id="about">About</button><br>
+		</a>
+		
+		<a href="#container_7">
+		<button type="button" class="menu2" id="portfolio" onclick="enrollSc()" > Student Registration</button><br>
+		</a>
+
+		<a href="#container_8">
+		<button type="button" class="menu2" id="portfolio" onclick="enrollTr()" > Tutor Registration</button><br>
+		</a>
+
+		<a href="#first">
+		<button type="button" class="menu2" id="atd">Courses</button><br>
+		</a>
+		
+		<a href="#paris">
+		<button type="button" class="menu2" id="team">Team</button><br>
+		</a>
+
+		<a href="#qna">
+		<button type="button" class="menu2" id="news">Questions</button><br>
+		</a>
+	</div>
+<script>
+function expend() {
+	var menu = document.getElementById('top2');
+	if(menu.style.display === 'none') {
+		menu.style.display = 'block';
+	}else{
+		menu.style.display = 'none'
+	}
+};
+
+
+</script>
+	
+<div class="container_top">
+		<h1 id="title">Intro Sessions<h1><br>
+		<h2 id="dscr">Looking to try something new and don't know where to start?<br>
+		Try our new intro sessions! <h2>
+		<a href="#container_5">	
+			<button type="button" class="headbt" id="lrn">Learn More</button>
+		</a>
+		<a href="#container_7">
+		<button type="button" class="headbt" id="sng" onclick="enrollSc()" >Sign-Up</button>
+		</a>
+		<img class="start" src="start.svg">
+	</div>
+<div class="container_2">
+	<div id="abt" data-aos="fade-right">
+		<h1>About:</h1>
+		<p>Looking to try something new? Whether you're bored in Lockdown or just looking to pick up a new hobbie, HomeworkHub's exclusive Introduction courses offer a wide range of subjects from Piano to Computer Science! During these introduction courses, you'll be given the opportunity to discover your chosen subject in more detail with our guest speakers! </p>
+	</div>
+		<img class="img" id="one" src="search2.svg" data-aos="fade-up">
+</div>
+
+</body>
+</html>

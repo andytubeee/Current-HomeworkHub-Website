@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+	<link rel="icon" href="logo.png">
+	<title>HomeworkHub</title>
+	<link rel="stylesheet" type="text/css" href="page_one.css">
+	<link href="action_page.php">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300&display=swap" rel="stylesheet">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+<body>
+	<script>
+ 			 AOS.init();
+ 			 AOS.init({
+ 			 	duration: 1000,
+ 			 	offset: 120,
+ 			 	throttleDelay: 200,
+ 			 });
+		</script>
+<div class="top">
+	<div class="dropdown">
+	<a onclick="expend()"><img class="extend" src="https://image.flaticon.com/icons/png/128/1828/1828859.png"></a>
+		<div class="dropdown-content">
+	  	 <a href="index.html">Accueil</a>
+	  	 <a href="#abt">À Propos</a>
+	  	 <a onclick="open1()" href="#container_7">Inscription Pour Les Etudiants</a>
+		 <a onclick="open2()" href="#container_8">Inscription Pour Les Tuteurs</a>
+		 <a href="#intro">Programmes d'Introduction</a>
+		 <a href="#donation">Dons</a>
+		 <a href="#paris">Équipe</a>
+		 <a href="#qna">Questions</a>
+		 <a href="index.html">
+			<img src="https://image.flaticon.com/icons/png/128/323/323329.png" class="flag">
+		</a>
+	   </div>
+	  </div>
+	</div>
+
+<div class="top2">
+<div class="menu">
+	<a href="index.html">
+	<div class="dropdown">
+	  <button class="dropbtn">Accueil</button>
+	</div>
+	</a>
+
+	<a href="#abt">
+	<div class="dropdown">
+	  <button class="dropbtn"> À Propos</button>
+	</div>
+	</a>
+
+	 <div class="dropdown">
+	  <button class="dropbtn">Inscription</button>
+	  <div class="dropdown-content">
+	  	 <a onclick="open1()" href="#container_7">Inscription Pour Les Etudiants</a>
+		 <a onclick="open2()" href="#container_8">Inscription Pour Les Tuteurs</a>
+	   </div>
+	</div>
+
+	<div class="dropdown">
+	  <button class="dropbtn">Les Événements</button>
+	  <div class="dropdown-content">
+	  	 <a href="#intro">Programmes d'Introduction</a>
+		 <a href="#donation">Dons</a>
+	   </div>
+	</div>
+
+	<a href="#first">
+	<div class="dropdown">
+	  <button class="dropbtn">Cours</button>
+	</div>
+	</a>
+
+	<a href="#paris">
+	<div class="dropdown">
+	  <button class="dropbtn">Équipe</button>
+	</div>
+	</a>
+
+	<a href="#qna">
+	<div class="dropdown">
+	  <button class="dropbtn">Questions</button>
+	</div>
+	</a>
+
+	<a href="index.html">
+		<img src="https://image.flaticon.com/icons/png/128/323/323329.png" class="flag">
+	</a>
+
+</div>
+</div>
+
+<script>
+function expend() {
+	var menu = document.getElementById('top2');
+	if(menu.style.display === 'none') {
+		menu.style.display = 'block';
+	}else{
+		menu.style.display = 'none'
+	}
+};
+function open1() {
+	var reg_s = document.getElementById('container_7');
+	if(reg_s.style.display === 'none') {
+		reg_s.style.display = 'block';
+	}else{
+		reg_s.style.display = 'none'
+	}
+};
+function open2() {
+	var reg_t = document.getElementById('container_8');
+	if(reg_t.style.display === 'none') {
+		reg_t.style.display = 'block';
+	}else{
+		reg_t.style.display = 'none'
+	}
+};
+
+</script>
+	
+<div class="container_top">
+			<img class="logo" src="logo.png">
+			<h1 id="title">Bienvenue à HomeworkHub <h1><br>
+			<h2 id="dscr">Apprenons et enseignons ensemble !<h2>
+		<a href="#container_5">	
+			<button type="button" class="headbt" id="lrn">Apprendre Plus</button>
+		</a>
+		<a href="#container_7">
+		<button type="button" class="headbt" id="sng2" onclick="enrollSc()" >S'inscrire</button>
+		</a>
+		<img class="start" src="start.svg">
+	</div>
+
+	<div class="about_sec" id="abt">
+	<div id="abt" data-aos="fade-right">
+		<h1>À propos de nous:</h1>
+		<p> Salut, nous sommes HomeworkHub, un club de tutorat gratuit orchestré par les jeunes ! HomeworkHub offre aux élèves du primaire des séances de tutorat GRATUITES et aux tuteurs bénévoles des heures de service communautaire, le tout dans le confort et la sécurité de votre foyer ! Nous comprenons à quel point il est difficile pour les jeunes étudiants de s'adapter et de suivre les méthodes d'apprentissage virtuel et à distance. Nous savons également à quel point les opportunités de bénévolat sont limitées et difficiles à trouver pour ceux qui veulent aider la communauté. Nous nous engageons à aider les personnes qui sont confrontées à ces problèmes grâce à nos services ! Ensemble, nous pouvons travailler pour améliorer la communauté et traverser ces moments difficiles!</p>
+	</div>
+		<img class="img" id="one" src="search2.svg" data-aos="fade-up">
+</div>
+
+
+<div id="container_10">
+	<div class="containers_m" data-aos="fade-right">
+		<!-- <img class="icons" src="https://image.flaticon.com/icons/png/128/167/167707.png"> -->
+		<h3 class="ssc">Les Séances</h3><br>
+		<span class="numbers">350</span><span class="plus">+</span>
+	</div>
+
+	<div class="containers_m" data-aos="fade-right">
+		<!-- <img class="icons" src="https://image.flaticon.com/icons/png/128/167/167707.png"> -->
+		<h3 class="ssc">Les Tuteurs</h3><br>
+		<span class="numbers">189</span><span class="plus">+</span>
+	</div>
+
+	<div class="containers_m" data-aos="fade-right">
+		<!-- <img class="icons" src="https://image.flaticon.com/icons/png/128/167/167707.png"> -->
+		<h3 class="ssc">les Heures</h3><br>
+		<span class="numbers">630</span><span class="plus">+</span>
+	</div>
+
+
+</div>
+
+<script>
+	$('.numbers').each(function() {
+		$(this).prop('Counter', 0).animate({
+			Counter: $(this).text()
+		}, {
+			duration: 4000,
+			easing: 'swing',
+			step: function(now){
+				$(this).text(Math.ceil(now));
+			}
+		});
+	});
+</script>
+
+
+<div class="container"><h1 class="why_us">Pourquoi nous?</h1></div>
+<div class="container_2">
+<div id="reasons" data-aos="fade-up">
+	<div class="flex">
+		<img class="why" src="https://image.flaticon.com/icons/png/128/891/891438.png">
+		<h2>Nous sommes totalement gratuits !</h2>
+	</div>
+	<h4>Nous comprenons que pendant ces temps difficiles, financer les études de votre enfant ne devrait pas être quelque chose dont vous devez vous soucier.</h4>
+	<div class="flex">
+		<img class="why" src="https://image.flaticon.com/icons/png/128/4270/4270161.png">
+		<h2>Sessions face à face !</h2>
+	</div>
+	<h4>Lors de nos séances, votre enfant bénéficiera d'une attention personnalisée et individuelle de la part de son tuteur !</h4>
+	<div class="flex">
+		<img class="why" src="https://image.flaticon.com/icons/png/128/610/610333.png">
+		<h2>Des tuteurs qualifiés !</h2>
+	</div>
+	<h4>Nos tuteurs du secondaire ont tous été à la place où votre enfant est aujourd'hui ! Nous avons également un processus de candidature, d'entretien et de formation pour tous nos tuteurs bénévoles afin d'assurer le meilleur pour votre étudiant.</h4>
+	<div class="flex">
+		<img class="why" src="https://image.flaticon.com/icons/png/128/1161/1161388.png">
+		<h2>Des services 100% sécurisés et virtuels !</h2>
+	</div>
+	<h4>Toutes nos sessions se tiendront en ligne sur l’application Google Meet pour assurer la sécurité de nos tuteurs et de nos étudiants pendant cette pandémie. De cette façon, votre enfant peut rester en sécurité tout en apprenant!</h4>
+	<div class="flex">
+		<img class="why" src="https://image.flaticon.com/icons/png/128/2784/2784461.png">
+		<h2>Nous accueillons les étudiants ELS!</h2>
+	</div>
+	<h4>Si l'anglais n'est pas la langue maternelle de votre enfant, sélectionnez simplement l'option ELS lors de l'inscription. Nous sélectionnerons un tuteur parmi nos nombreux bénévoles multilingues talentueux pour eux !</h4>
+</div>
+	<img class = "one" id="two" src="choose2.svg" data-aos="fade-up">
+</div>
+<div id="container_5">
+	<!-- <h3>We are tutoring <span>Grades 1 - 6 </span></h3>
+	<h3>Each session is <span>45 minutes long</span></h3>
+	<h3>Each subject is being tutored for <span>4 sessions</span></h3>
+	<h3>You cana sign up for <span>3 subjects at a time</span></h3> -->
+	<div class="containers_p" data-aos="fade-right">
+		<img class="icons" src="https://image.flaticon.com/icons/png/128/167/167707.png">
+		<h3 class="ssc">Nous offrons du tutorat</h3><br>
+		<h2><mark>de 1ère a 7ème année</mark></h2>
+	</div>
+	<div class="containers_p"data-aos="fade-right">
+		<img class="icons" src="https://image.flaticon.com/icons/png/128/2972/2972531.png">
+		<h3 class="ssc">Chaque séance est enseignée pendant</h3><br>
+		<h2><mark>45 minutes</mark></h2>
+	</div>
+	<div class="containers_p" data-aos="fade-right">
+		<img class="icons" src="https://image.flaticon.com/icons/png/128/972/972260.png">
+		<h3 class="ssc">Chaque matière est enseignée pendant</h3><br>
+		<h2><mark>8 séances</mark></h2>
+	</div>
+	<div class="containers_p" data-aos="fade-right">
+		<img class="icons"src="https://image.flaticon.com/icons/png/128/2702/2702069.png">
+		<h3 class="ssc">Vous pouvez vous inscrire pour <span>3 sujets à la fois</h3><br>
+		<h2>jusqu'à <mark>3 sujets</mark>à la fois</h2>
+	</div>
+</div>
+<div class="container"><h1 class="hh">Inscrivez-vous maintenant !</h1></div>
+<a onclick="enrollSc()" id="hh1">Inscrivez-vous!</a>
+<div class="container_2" data-aos="up">
+	<div class="containers" id="first" data-aos="fade-up">
+		<h2>Les Maths</h2>
+		<img class="subjects"  src="https://image.flaticon.com/icons/png/128/1739/1739515.png">
+		<h4>Prix ​​: GRATUIT</h4>
+	</div>
+	<div class="containers" id="second" data-aos="fade-up">
+		<h2>Les Sciences</h2>
+		<img class="subjects"  src="https://image.flaticon.com/icons/png/128/3035/3035512.png">
+		<h4>Prix ​​: GRATUIT</h4>	
+	</div>
+	<div class="containers" id="third" data-aos="fade-up">
+		<h2>L'Anglais</h2>
+		<img class="subjects" src="https://image.flaticon.com/icons/png/128/1902/1902726.png">
+		<h4>Prix ​​: GRATUIT</h4>	
+	</div>
+	<div class="containers" id="fourth" data-aos="fade-up">
+		<h2>Le Français</h2>
+		<img class="subjects" src="https://image.flaticon.com/icons/png/128/3898/3898007.png">
+		<h4>Prix ​​: GRATUIT</h4>
+	</div>
+</div>
+
+<div class="container_2" data-aos="up">
+<div class="containers" id="fifth" data-aos="fade-up">
+		<h2>Le Mandarin</h2>
+		<img class="subjects" src="https://image.flaticon.com/icons/png/128/646/646585.png">
+		<h4>Prix ​​: GRATUIT</h4>
+	</div>
+
+	<div class="containers" id="sixth" data-aos="fade-up">
+		<h2>La Géographie</h2>
+		<img class="subjects" src="https://image.flaticon.com/icons/png/128/921/921448.png">
+		<h4>Prix ​​: GRATUIT</h4>
+	</div>
+
+	<div class="containers" id="seventh" data-aos="fade-up">
+		<h2>Les Programmes d'Introduction</h2>
+		<img class="subjects" src="https://image.flaticon.com/icons/png/128/2643/2643368.png"><br>
+		<a href="#intro">
+		<button typ="button" class="lrnm">Apprendre Encore Plus</button>
+		</a>
+ 	</div>
+</div>
+
+<div id="container_7">
+	<h1>Devenez Un Etudiant de HomeworkHub!</h1>
+	<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeCJdNKBQHUi_8bKE3GW6stMa2GuQe3DyfDc2KEGRVBNjufFg/viewform?embedded=true" width="100%" height="520" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+</div>
+
+<script>
+	function enrollSc(){
+		var form = document.getElementById('container_7');
+		let button = document.querySelector(".button");
+		if (form.style.display === 'none') {
+			form.style.display = 'block';
+			button.disabled = true;
+		}else{
+			form.style.display = 'none';
+			button.disabled = false;
+		}
+	};
+	function enrollTr(){
+		var form_2 = document.getElementById('container_8');
+		if(form_2.style.display === 'none') {
+			form_2.style.display = 'block';
+			form.style.display = 'block';
+			document.getElementById('enroll').disabled = true;
+		 }else{
+			form_2.style.display = 'none';
+			document.getElementById('enroll').disabled = false;
+		}
+	};
+</script>
+
+<div class="volunteer" data-aos="fade-up">
+<div class="container_4">
+		<h3 id="vol">Besoin d'heures de service communautaire?<br>Devenez Tuteur !</h3>
+		<h2>Pourquoi Vous Devriez Nous Joindre</h2>
+		<p>Vous cherchez à travailler avec de jeunes enfants et à aider notre communauté tout en gagnant des heures de bénévolat? Dans les circonstances actuelles, il est difficile de trouver des moyens d'obtenir des heures de bénévolat car toutes les institutions habituelles sont soit fermées et/ou n’ont pas de places. En rejoignant HomeworkHub, non seulement vous aidez quelqu'un qui pourrait avoir des difficultés avec leurs études, gagnez des heures de bénévolat ET améliorez votre curriculum vitae universitaire, mais vous avez également la possibilité de développer des compétences de patience, de leadership et de communication tout en restant en sécurité !</p>
+		<h2>La Description de la Tâche</h2>
+		<p>Après le processus de candidature, vous serez jumelé avec un élève du primaire et commencez des séances de tutorat en ligne de 45 minutes avec lui sur une période de 8 semaines.</p>
+		<h2>Au cours de ces sessions, vous allez :</h2>
+		<ul>
+			<li>Enseigner vos élèves sur les matières qui vous sont assignées</li>
+			<li>Être à leur aide avec toutes les questions ou tâches qu'ils peuvent avoir</li>
+			<li>Enregistrer votre temps!</li>
+		</ul>
+		<h2>Les Exigences</h2>
+		<ul>
+			<li>Avoir aux moins 14 ans ou aller à l’école secondaire</li>
+			<li>Avoir de l’engagement et dévouement à la tâche</li>
+			<li>Être à l'aise de travailler avec des enfants et des pré-adolescents</li>
+			<li>De bonnes notes et des compétences en communication sont nécessaires!</li>
+		</ul>
+		<button onclick="enrollTr()" class="reg">S'inscrire</button>
+	</div>
+	<img class="work" src="work2.svg" data-aos="fade-up">
+	<div class="container">
+			</div>
+		</div>
+
+<div id="container_8">
+	<h1>Devenez Un Tuteur de HomeworkHub Aujourd'hui!<h1>
+	<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSecAWrA9XmRFuKeeElm8SS5E09MsU5nLyrujhs0FRg2w1Glnw/viewform?embedded=true" width="100%" height="520" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+</div>
+
+
+	<div class="mission" data-aos="fade-up">
+		<img src="mone2.svg" id="mone">
+<div class="container_6">
+	<h1>Notre Mission:</h1>
+	<p>Avec le monde en pandémie et des milliers d'écoles fermées et/ou modifiées, de nombreux étudiants sont obligés d'apprendre en ligne ou en mode hybride. De nombreux enfants ont eux des difficultés à s'adapter ou à suivre cette nouvelle méthode d'apprentissage. Il n'y a tout simplement pas assez d'assistance pour aider tous les étudiants à s'épanouir dans cet environnement virtuel. Chez HomeworkHub, nous reconnaissons la demande d'aide supplémentaire et nous nous engageons à offrir des séances de tutorat en ligne personnalisées et gratuites aux étudiants ayant besoin d'aide.<br></p>
+	<p>La pandémie entraîne également la fermeture de nombreuses organisations bénévoles et communautaires. En tant que groupe d'élèves du secondaire, nous avons également trouvé très difficile d'aider notre communauté en ces temps difficiles et de gagner également des heures de service communautaire. C'est pourquoi nous avons lancé HomeworkHub. En plus de fournir une aide gratuite et accessible aux jeunes étudiants en ces temps sans précédent, HomeworkHub se consacre à fournir un endroit aux étudiants passionnés par notre communauté pour aider les autres, acquérir des expériences précieuses et remplir leurs heures de bénévolat. </p>
+	</div>
+	<img src="mtwo2.svg" id="mone">
+</div>
+
+<div id="donation">
+<div class="container_13">
+	<h1>Nous avons besoin de votre aide! Faites un don aujourd'hui !</h1>
+	<h2>Comment faire un don ?</h2>
+	<h3>Faites-nous un don via le lien Paypal ci-dessous!</h3>
+	<h2> À quoi servent les dons ?</h2>
+	<ul>
+		<li>Les Événements</li>
+		<li>Les Plateformes Organisationnelles (comme ce site web !) </li>
+		<li>Les Matériaux d'Apprentissage</li>
+		<li>Les Autres Dépenses</li>
+	</ul>
+	<a href="https://www.paypal.com/donate?business=DRPWCU5CZ3J5J&currency_code=CAD">
+	<button class="donate3">Faire un Don Maintenant!</button>
+	</a>
+	<img src="donate.svg" class="donate">
+</div>
+<div class="container_13" id="intro">
+	<img class="new" src="https://image.flaticon.com/icons/png/128/891/891447.png">
+	<h1>Les Programmes d'Introduction</h1>
+	<h3>Envie d'essayer quelque chose de nouveau ? Que vous vous ennuyiez pendant le confinement ou que vous cherchiez simplement à trouver un nouveau passe-temps, les cours d'introduction GRATUITS exclusifs de HomeworkHub offrent un large éventail de sujets, du piano à l’informatique! Au cours de ces cours d'introduction, vous aurez l'opportunité de découvrir plus en détail le sujet que vous avez choisi avec nos présentateurs expérimentés et même de l'essayer par vous-même ! Les cours durent de 1h30 à 2h00 avec un maximum de 30 à 50 étudiants.</h3>
+	<!-- <h1>This Month's Intro Program:</h1>
+	<h2></h2>
+	<table>
+		<tr>
+			<th>Instructor(s)</th>
+			<td></td>
+		</tr>
+		<tr>
+			<th>Price</th>
+			<td>FREE</td>
+		</tr>
+		<tr>
+			<th>Audience</th>
+			<td></td>
+		</tr>
+		<tr>
+			<th>Dates</th>
+			<td></td>
+		</tr>
+		<tr>
+			<th>Student Capacity</th>
+			<td></td>
+		</tr>
+	</table>
+	<a href="" class="intro_reg">Register Now</a> -->
+
+</div>
+
+</div>
+	<h1 id="team">Rencontrez notre équipe!</h1>
+<div class="container_9">
+	
+	<div class="containers_5"data-aos="fade-up">
+		<img class="teamm" id="paris" src="paris.jpg">
+		<h2>Paris Cai</h2>
+		<h4>Founder and President</h4>
+		<p class="dscr">Hi! My name is Paris and I'm a grade 11 student at WCI! I had the idea to start HomeworkHub in January as a way to help and give back to my community! In my free time, I enjoy piano, baking, skating, keeping up with politics, and fashion! I'm so excited to be working with my team and I'm looking forward to everything to come :)</p>
+	</div>
+
+	<div class="containers_5"data-aos="fade-up">
+		<img class="teamm" id="phoebe" src="pheobe.jpg">
+		<h2>Phoebe Luo</h2>
+		<h4>Co-President </h4>
+		<p class="dscr">Hi! I’m Phoebe and I’m currently in grade 12 at Cameron Heights. I love to paint and thrift in my free time. I joined this organization to help others however I can. I’m so exited to work with such caring people to make a difference in our community!</p>
+	</div>
+
+	<div class="containers_5"data-aos="fade-up">
+		<img class="teamm" id="mariya" src="me.jpg">
+		<h2>Mariya Turetska</h2>
+		<h4>Co-Vice President and Technical Director </h4>
+		<p class="dscr">Hi! My name is Mariya and I am currently a grade 11 student at Waterloo Collegiate Institute. I love playing piano and composing my own music. My favourite subjects are math and science. I enjoy reading and hiking. I am very excited to be working at HomeworkHub and helping students in our community!</p>
+	</div>
+</div>
+<div class="container_9">
+	<div class="containers_5"data-aos="fade-up">
+		<img class="teamm" id="sammi" src="sammi.jpg">
+		<h2>Sammi Wang</h2>
+		<h4>Co-Vice President and Treasurer</h4>
+		<p class="dscr">Hi my name's Sammi and I'm a grade 11 student at WCI! I joined HoneworkHub so I can help out the community since I know how hard virtual school is. I like to play badminton, swim and debate, and in my free time I enjoy drawing while listening to audiobooks!</p>
+	</div>
+
+	<div class="containers_5"data-aos="fade-up">
+		<img class="teamm" id="leah" src="leah.jpg">
+		<h2>Leah Cai</h2>
+		<h4>Students and Volunteer Director </h4>
+		<p class="dscr">Hi, my name is Leah and I'm an 11th grade student at Pere-Rene de Galinee, which is a fully french school in Cambridge. I can speak three languages: French, English and Chinese! I like to play basketball and badminton and I am passionate about helping others and my community in any way I can. </p>
+	</div> 
+	<div class="containers_5"data-aos="fade-up">
+		<img class="teamm" id="adrian" src="adrian.jpg">
+		<h2>Adrian Golab</h2>
+		<h4>Technical Assistant and Advisor </h4>
+		<p class="dscr">Hello! My name is Adrian and I am a 9th grader at Waterloo Collegiate Institute. I joined HomeworkHub to help give back to my community and to help others discover the joys of learning. In my free time, I play violin and piano, and I love playing basketball. I am excited to join this amazing team and to help the students in my community.</p>
+	</div>
+</div>
+
+<div class="container_9"data-aos="fade-up">
+	<div class="containers_5"data-aos="fade-up">
+		<img class="teamm" id="mychau" src="mychau.jpg">
+		<h2>MyChau Tight</h2>
+		<h4>Co-Pairing Manager</h4>
+		<p class="dscr">Hi there! My name is Mỹ Châu. I am in 10th grade at Waterloo Collegiate Institute. My favourite subject is science and goal is to become a specialized doctor/surgeon! When I am not busy doing schoolwork, I like to bake, workout, watch T.V, and help out in my community. I joined HomeworkHub to gives back to the community and i'm so excited for the future and potential of HomeworkHub!</p>
+	</div>
+	<div class="containers_5"data-aos="fade-up">
+		<img class="teamm" id="tina" src="tina.png">
+		<h2>Tahmina Faez</h2>
+		<h4>Co-Pairing Manager</h4>
+		<p class="dscr">Hello! My name is Tahmina and I am currently a 11th grade at Kitchener Waterloo Collegiate and Vocational School. I enjoy travelling, biking, and spending time with my friends and family. I am passionate about helping others and giving back to the community. I am very excited to be a part of the HomeworkHub team and look forward to making a difference by doing something fulfilling!</p>
+	</div>
+	<div class="containers_5"data-aos="fade-up">
+		<img class="teamm" id="fiona" src="fiona.jpg">
+		<h2>Fiona MacDougall</h2>
+		<h4>Creative Design Manager</h4>
+		<p class="dscr">Hi I’m Fiona and I’m currently a Gr. 11 student at sjam. In my free time, I enjoy playing music and hanging out w my friends. I also regularly participate in speech competitions in Chinese, French and English. I am super excited to be apart of the HomeworkHub team and give back to the community!</p>
+	</div>
+</div>
+<div class="container_9"data-aos="fade-up">
+	<div class="containers_5"data-aos="fade-up">
+		<img class="teamm" id="angela" src="angela.jpeg">
+		<h2>Angela Zielke-Stray</h2>
+		<h4>Marketing Manager</h4>
+		<p class="dscr">Hi there! My name is Angela and I am a grade twelve student at KCI. In my free time I love to road bike, walk my two dogs, and ski. I’m excited to be a part of HomeworkHub and help other students in K-W as much as I can :) </p>
+	</div>
+</div>
+<h1 class="team" data-aos="fade-up">Les Questions Souvent Posées:</h1>
+
+<div id="qna" data-aos="fade-right">
+
+<div id="question1" class="questions"  data-aos="fade-up" onclick="functionOne()">
+		<h4>Puis-je m'inscrire à plusieurs matières ?</h4>
+	<div id="qone">
+		<p>Absolument! vous pouvez vous inscrire pour un total de 3 sujets à la fois. Bien que la disponibilité des tuteurs puisse varier d'un sujet à l'autre.</p>
+	</div>
+	</div>
+
+	<div id="question2" class="questions"  data-aos="fade-up" onclick="functionTwo()">
+		<h4>Mes 8 semaines se sont écoulées. Puis-je m'inscrire à nouveau ?</h4>
+	<div id="qtwo">
+		<p>Oui, vous pouvez vous inscrire autant de fois que vous le souhaitez ! Encore une fois, la disponibilité peut varier.</p>
+	</div>
+	</div>
+
+	<div id="question3" class="questions"  data-aos="fade-up" onclick="functionThree()">
+		<h4>Mon tuteur/étudiant ne répond pas, que dois-je faire ?</h4>
+	<div id="qthree">
+		<p>Veuillez nous envoyer un courriel, nous communiquerons avec la personne et réglerons le problème. Si il/elle ne répond toujours pas, nous vous attribuons une nouvelle personne !</p>
+	</div>
+	</div>
+
+	<div id="question4" class="questions"  data-aos="fade-up" onclick="functionFour()">
+		<h4>J'ai fini mes séances ! Qu'est-ce que je fais maintenant?</h4>
+	<div id="qfour">
+		<p>Félicitations, enregistrez vos heures et nous vous contacterons lorsque nous aurons quelqu'un de nouveau pour vous !</p>
+	</div>
+	</div>
+
+	<div id="question5" class="questions"  data-aos="fade-up" onclick="functionFive()">
+		<h4>Je me suis inscrit à HomeworkHub, mais personne n'a été en contact ?</h4>
+	<div id="qfive">
+		<p>Veuillez vérifier votre spam, nos e-mails s'y retrouvent parfois. Si vous rencontrez toujours des problèmes, n'hésitez pas à nous envoyer un courriel et nous ferrons notre mieux pour régler le problème.</p>
+	</div>
+	</div>
+	
+</div>
+
+	<script>
+		function functionOne() {
+				var x = document.getElementById("qone");
+				if (x.style.display === "none"){
+					x.style.display = "block";
+				} else {
+					x.style.display = "none";
+					// document.getElementById('opening').src="https://image.flaticon.com/icons/png/128/814/814031.png";
+				}
+			}
+			function functionTwo() {
+				var x = document.getElementById("qtwo");
+				if (x.style.display === "none"){
+					x.style.display = "block";
+				} else {
+					x.style.display = "none";
+				}
+			}
+			function functionThree() {
+				var x = document.getElementById("qthree");
+				if (x.style.display === "none"){
+					x.style.display = "block";
+				} else {
+					x.style.display = "none";
+				}
+			}
+			function functionFour() {
+				var x = document.getElementById("qfour");
+				if (x.style.display === "none"){
+					x.style.display = "block";
+				} else {
+					x.style.display = "none";
+				}
+			}
+			function functionFive() {
+				var x = document.getElementById("qfive");
+				if (x.style.display === "none"){
+					x.style.display = "block";
+				} else {
+					x.style.display = "none";
+				}
+			}
+	</script>
+<div class="footer">
+	<h1 class="team">HomeworkHub</h1>
+<div class="boxes">
+	<div class="box1">
+		<h2 class="footl">Des Liens</h2>
+	<a href="index.html">
+		<button type="button" class="footl">Accueil</button><br>
+	</a>
+	<a href="#abt">
+		<button type="button" class="footl"> À Propos</button><br>
+	</a>
+	<a href="#container_7">
+		<button onclick="enrollSc()" class="footl">Inscription</button><br>
+	</a>
+	<a href="#first">
+		<button type="button" class="footl">Cours</button><br>
+	</a>
+	<a href="#paris">
+		<button type="button" class="footl">Équipe</button><br>
+	</a>
+	<a href="#question1">
+		<button type="button" class="footl">Questions</button><br>
+	</a>
+	</div>
+
+	<div class="box2">
+		<h2 class="footl">Les Réseaux Sociaux et Les Contacts</h2>
+	<a href="https://www.instagram.com/hh.tutoring/">
+		<button type="button" class="footl">Instagram</button><br>
+	</a>
+		<!-- <button type="button" class="footl">Facebook</button><br> -->
+	<a href="mailto:tutoring.homeworkhub@gmail.com">
+		<button type="button" class="footl">Courriel</button><br>
+	</a>
+	</div>
+
+	<div class="box3">
+		<h2 class="footl">Droits d'auteur: Mariya Turetska, 2021</h2>
+	<a href="privacy.html">
+		<button type="button" class="footl"> Confidentialité et Modalités</button><br>
+	</a>
+	<a href="terms.html">
+		<button type="button" class="footl"> Conditions d'Utilisation</button><br>
+	</a>
+	</div>
+</div>
+</div>
+
+
+</body>
