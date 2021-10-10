@@ -5,6 +5,15 @@ html {
   scroll-behavior: smooth;
  }
 
+ img{
+   -webkit-user-drag: none;
+ }
+
+ button:hover {
+   cursor: pointer;
+   transition: 300ms ease-in-out
+ }
+
 @media(max-width: 2000px){
 .dropbtn {
   background-color: #466496;
