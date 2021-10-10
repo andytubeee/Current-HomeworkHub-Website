@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
@@ -11,405 +12,455 @@
 	<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300&display=swap" rel="stylesheet">
 	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
+
 <body>
 	<script>
- 			 AOS.init();
- 			 AOS.init({
- 			 	duration: 1000,
- 			 	offset: 120,
- 			 	throttleDelay: 200,
- 			 });
-		</script>
-<div class="top">
-	<div class="dropdown">
-	<a onclick="expend()"><img class="extend" src="https://image.flaticon.com/icons/png/128/1828/1828859.png"></a>
-		<div class="dropdown-content">
-	  	 <a href="index.html">Home</a>
-	  	 <a href="#abt">About</a>
-	  	 <a onclick="open1()" href="#container_7">Student Registration</a>
-		 <a onclick="open2()" href="#container_8">Tutor Registration</a>
-		 <a href="#intro">Intro Programs</a>
-		 <a href="#donation">Donation Program</a>
-		 <a href="#paris">Team</a>
-		 <a href="#qna">Questions</a>
-		 <a href="french.html">
-			<img src="https://image.flaticon.com/icons/png/128/197/197560.png" class="flag">
-		</a>
-	   </div>
-	  </div>
+		AOS.init();
+		AOS.init({
+			duration: 1000,
+			offset: 120,
+			throttleDelay: 200,
+		});
+	</script>
+	<div class="top">
+		<div class="dropdown">
+			<a onclick="expend()"><img class="extend"
+					src="https://image.flaticon.com/icons/png/128/1828/1828859.png"></a>
+			<div class="dropdown-content">
+				<a href="index.html">Home</a>
+				<a href="#abt">About</a>
+				<a onclick="open1()" href="#container_7">Student Registration</a>
+				<a onclick="open2()" href="#container_8">Tutor Registration</a>
+				<a href="#intro">Intro Programs</a>
+				<a href="#donation">Donation Program</a>
+				<a href="#paris">Team</a>
+				<a href="#qna">Questions</a>
+				<a href="french.html">
+					<img src="https://image.flaticon.com/icons/png/128/197/197560.png" class="flag">
+				</a>
+			</div>
+		</div>
 	</div>
 
-<div class="top2">
-<div class="menu">
-	<a href="index.html">
-	<div class="dropdown">
-	  <button class="dropbtn">Home</button>
+	<div class="top2">
+		<div class="menu">
+			<a href="index.html">
+				<div class="dropdown">
+					<button class="dropbtn">Home</button>
+				</div>
+			</a>
+
+			<a href="#abt">
+				<div class="dropdown">
+					<button class="dropbtn">About</button>
+				</div>
+			</a>
+
+			<div class="dropdown">
+				<button class="dropbtn">Registration</button>
+				<div class="dropdown-content">
+					<a onclick="open1()" href="#container_7">Student Registration</a>
+					<a onclick="open2()" href="#container_8">Tutor Registration</a>
+				</div>
+			</div>
+
+			<div class="dropdown">
+				<button class="dropbtn">Events</button>
+				<div class="dropdown-content">
+					<a href="#intro">Intro Programs</a>
+					<a href="#donation">Donation Program</a>
+				</div>
+			</div>
+
+			<a href="#first">
+				<div class="dropdown">
+					<button class="dropbtn">Courses</button>
+				</div>
+			</a>
+
+			<a href="#paris">
+				<div class="dropdown">
+					<button class="dropbtn">Team</button>
+				</div>
+			</a>
+
+			<a href="#qna">
+				<div class="dropdown">
+					<button class="dropbtn">Questions</button>
+				</div>
+			</a>
+
+			<a href="french.html">
+				<img src="https://image.flaticon.com/icons/png/128/197/197560.png" class="flag">
+			</a>
+
+		</div>
 	</div>
-	</a>
 
-	<a href="#abt">
-	<div class="dropdown">
-	  <button class="dropbtn">About</button>
-	</div>
-	</a>
+	<script>
+		function expend() {
+			var menu = document.getElementById('top2');
+			if (menu.style.display === 'none') {
+				menu.style.display = 'block';
+			} else {
+				menu.style.display = 'none'
+			}
+		};
+		function open1() {
+			var reg_s = document.getElementById('container_7');
+			if (reg_s.style.display === 'none') {
+				reg_s.style.display = 'block';
+			} else {
+				reg_s.style.display = 'none'
+			}
+		};
+		function open2() {
+			var reg_t = document.getElementById('container_8');
+			if (reg_t.style.display === 'none') {
+				reg_t.style.display = 'block';
+			} else {
+				reg_t.style.display = 'none'
+			}
+		};
 
-	 <div class="dropdown">
-	  <button class="dropbtn">Registration</button>
-	  <div class="dropdown-content">
-	  	 <a onclick="open1()" href="#container_7">Student Registration</a>
-		 <a onclick="open2()" href="#container_8">Tutor Registration</a>
-	   </div>
-	</div>
+	</script>
 
-	<div class="dropdown">
-	  <button class="dropbtn">Events</button>
-	  <div class="dropdown-content">
-	  	 <a href="#intro">Intro Programs</a>
-		 <a href="#donation">Donation Program</a>
-	   </div>
-	</div>
-
-	<a href="#first">
-	<div class="dropdown">
-	  <button class="dropbtn">Courses</button>
-	</div>
-	</a>
-
-	<a href="#paris">
-	<div class="dropdown">
-	  <button class="dropbtn">Team</button>
-	</div>
-	</a>
-
-	<a href="#qna">
-	<div class="dropdown">
-	  <button class="dropbtn">Questions</button>
-	</div>
-	</a>
-
-	<a href="french.html">
-		<img src="https://image.flaticon.com/icons/png/128/197/197560.png" class="flag">
-	</a>
-
-</div>
-</div>
-
-<script>
-function expend() {
-	var menu = document.getElementById('top2');
-	if(menu.style.display === 'none') {
-		menu.style.display = 'block';
-	}else{
-		menu.style.display = 'none'
-	}
-};
-function open1() {
-	var reg_s = document.getElementById('container_7');
-	if(reg_s.style.display === 'none') {
-		reg_s.style.display = 'block';
-	}else{
-		reg_s.style.display = 'none'
-	}
-};
-function open2() {
-	var reg_t = document.getElementById('container_8');
-	if(reg_t.style.display === 'none') {
-		reg_t.style.display = 'block';
-	}else{
-		reg_t.style.display = 'none'
-	}
-};
-
-</script>
-	
-<div class="container_top">
-			<img class="logo" src="logo.png">
-			<h1 id="title">Welcome to HomeworkHub<h1><br>
-			<h2 id="dscr">Let's learn and teach together!<h2>
-		<a href="#container_5">	
-			<button type="button" class="headbt" id="lrn">Learn More</button>
-		</a>
-		<a href="#container_7">
-		<button type="button" class="headbt" id="sng" onclick="enrollSc()" >Sign-Up</button>
-		</a>
-		<img class="start" src="start.svg">
+	<div class="container_top">
+		<img class="logo" src="logo.png">
+		<h1 id="title">Welcome to HomeworkHub<h1><br>
+				<h2 id="dscr">Let's learn and teach together!<h2>
+						<a href="#container_5">
+							<button type="button" class="headbt" id="lrn">Learn More</button>
+						</a>
+						<a href="#container_7">
+							<button type="button" class="headbt" id="sng" onclick="enrollSc()">Sign-Up</button>
+						</a>
+						<img class="start" src="start.svg">
 	</div>
 
 	<div class="about_sec" id="abt">
-	<div id="abt" data-aos="fade-right">
-		<h1>About Us:</h1>
-		<p>Hi, we're the HomeworkHub, a youth orchestrated free after school tutoring club! HomeworkHub provides Elementary school students with FREE tutoring sessions and volunteer tutors with community service hours, all from the comfort and safety of your own homes!<br>We understand how hard it is for younger students to adapt and keep up with the virtual and distance learning methods. We also know how limited and difficult volunteer opportunities are to find for those who want to help the community. We are dedicated to helping people who are currently facing those problems through our services! Together, we can work towards improving the community and getting through these tough times!</p>
-	</div>
+		<div id="abt" data-aos="fade-right">
+			<h1>About Us:</h1>
+			<p>Hi, we're the HomeworkHub, a youth orchestrated free after school tutoring club! HomeworkHub provides
+				Elementary school students with FREE tutoring sessions and volunteer tutors with community service
+				hours, all from the comfort and safety of your own homes!<br>We understand how hard it is for younger
+				students to adapt and keep up with the virtual and distance learning methods. We also know how limited
+				and difficult volunteer opportunities are to find for those who want to help the community. We are
+				dedicated to helping people who are currently facing those problems through our services! Together, we
+				can work towards improving the community and getting through these tough times!</p>
+		</div>
 		<img class="img" id="one" src="search2.svg" data-aos="fade-up">
-</div>
-
-
-<div id="container_10">
-	<div class="containers_m" data-aos="fade-right">
-		<!-- <img class="icons" src="https://image.flaticon.com/icons/png/128/167/167707.png"> -->
-		<h3 class="ssc">Sessions</h3><br>
-		<span class="numbers">350</span><span class="plus">+</span>
-	</div>
-
-	<div class="containers_m" data-aos="fade-right">
-		<!-- <img class="icons" src="https://image.flaticon.com/icons/png/128/167/167707.png"> -->
-		<h3 class="ssc">Tutors</h3><br>
-		<span class="numbers">189</span><span class="plus">+</span>
-	</div>
-
-	<div class="containers_m" data-aos="fade-right">
-		<!-- <img class="icons" src="https://image.flaticon.com/icons/png/128/167/167707.png"> -->
-		<h3 class="ssc">Hours</h3><br>
-		<span class="numbers">630</span><span class="plus">+</span>
 	</div>
 
 
-</div>
+	<div id="container_10">
+		<div class="containers_m" data-aos="fade-right">
+			<!-- <img class="icons" src="https://image.flaticon.com/icons/png/128/167/167707.png"> -->
+			<h3 class="ssc">Sessions</h3><br>
+			<span class="numbers">350</span><span class="plus">+</span>
+		</div>
 
-<script>
-	$('.numbers').each(function() {
-		$(this).prop('Counter', 0).animate({
-			Counter: $(this).text()
-		}, {
-			duration: 4000,
-			easing: 'swing',
-			step: function(now){
-				$(this).text(Math.ceil(now));
-			}
+		<div class="containers_m" data-aos="fade-right">
+			<!-- <img class="icons" src="https://image.flaticon.com/icons/png/128/167/167707.png"> -->
+			<h3 class="ssc">Tutors</h3><br>
+			<span class="numbers">189</span><span class="plus">+</span>
+		</div>
+
+		<div class="containers_m" data-aos="fade-right">
+			<!-- <img class="icons" src="https://image.flaticon.com/icons/png/128/167/167707.png"> -->
+			<h3 class="ssc">Hours</h3><br>
+			<span class="numbers">630</span><span class="plus">+</span>
+		</div>
+
+
+	</div>
+
+	<script>
+		$('.numbers').each(function () {
+			$(this).prop('Counter', 0).animate({
+				Counter: $(this).text()
+			}, {
+				duration: 4000,
+				easing: 'swing',
+				step: function (now) {
+					$(this).text(Math.ceil(now));
+				}
+			});
 		});
-	});
-</script>
+	</script>
 
 
-<div class="container"><h1 class="why_us" id="why">Why Us?</h1></div>
-<div class="container_2">
-<div id="reasons" data-aos="fade-up">
-	<div class="flex">
-		<img class="why" src="https://image.flaticon.com/icons/png/128/891/891438.png">
-		<h2>We're Completely Free!</h2>
+	<div class="container">
+		<h1 class="why_us" id="why">Why Us?</h1>
 	</div>
-	<h4>We understand that during such stressful times, Financing your child's education shouldn't be something you need to worry about. </h4>
-	<div class="flex">
-		<img class="why" src="https://image.flaticon.com/icons/png/128/4270/4270161.png">
-		<h2>One on One Attention!</h2>
+	<div class="container_2">
+		<div id="reasons" data-aos="fade-up">
+			<div class="flex">
+				<img class="why" src="https://image.flaticon.com/icons/png/128/891/891438.png">
+				<h2>We're Completely Free!</h2>
+			</div>
+			<h4>We understand that during such stressful times, Financing your child's education shouldn't be something
+				you need to worry about. </h4>
+			<div class="flex">
+				<img class="why" src="https://image.flaticon.com/icons/png/128/4270/4270161.png">
+				<h2>One on One Attention!</h2>
+			</div>
+			<h4>During our sessions, your child will receive personalized, one on one attention from their tutor! </h4>
+			<div class="flex">
+				<img class="why" src="https://image.flaticon.com/icons/png/128/610/610333.png">
+				<h2>Qualified Tutors!</h2>
+			</div>
+			<h4>Our highschool tutors have all been where your child is today! Not only that, but we have an
+				application, interview and training process for all our volunteer tutors to ensure only the best for
+				your student.</h4>
+			<div class="flex">
+				<img class="why" src="https://image.flaticon.com/icons/png/128/1161/1161388.png">
+				<h2>100% Safe and Virtual Services!</h2>
+			</div>
+			<h4>All of our sessions will be held online over google meet to ensure our tutors and student's safeties
+				during this Pandemic. That way your child can stay safe while learning! </h4>
+			<div class="flex">
+				<img class="why" src="https://image.flaticon.com/icons/png/128/2784/2784461.png">
+				<h2>We Cater to ESL Students!</h2>
+			</div>
+			<h4>If English isn't your child's first language, just select the ESL option when registering. We'll select
+				a tutor from our many talented multilingual volunteers just for them! </h4>
+		</div>
+		<img class="one" id="two" src="choose2.svg" data-aos="fade-up">
 	</div>
-	<h4>During our sessions, your child will receive personalized, one on one attention from their tutor! </h4>
-	<div class="flex">
-		<img class="why" src="https://image.flaticon.com/icons/png/128/610/610333.png">
-		<h2>Qualified Tutors!</h2>
-	</div>
-	<h4>Our highschool tutors have all been where your child is today! Not only that, but we have an application, interview and training process for all our volunteer tutors to ensure only the best for your student.</h4>
-	<div class="flex">
-		<img class="why" src="https://image.flaticon.com/icons/png/128/1161/1161388.png">
-		<h2>100% Safe and Virtual Services!</h2>
-	</div>
-	<h4>All of our sessions will be held online over google meet to ensure our tutors and student's safeties during this Pandemic. That way your child can stay safe while learning! </h4>
-	<div class="flex">
-		<img class="why" src="https://image.flaticon.com/icons/png/128/2784/2784461.png">
-		<h2>We Cater to ESL Students!</h2>
-	</div>
-	<h4>If English isn't your child's first language, just select the ESL option when registering. We'll select a tutor from our many talented multilingual volunteers just for them! </h4>
-</div>
-	<img class = "one" id="two" src="choose2.svg" data-aos="fade-up">
-</div>
 
-<div class="container"><h1 class="why_us">Meet Our Community Partners!</h1></div>
-	<div class="together"  id="move">
+	<div class="container">
+		<h1 class="why_us">Meet Our Community Partners!</h1>
+	</div>
+	<div class="together" id="move">
 		<a href="https://compassrefugee.ca/ ">
-		<img class="partners" src="https://compassrefugee.ca/wp-content/uploads/2021/07/COMPASS-logo-300X125.png">
+			<img class="partners" src="https://compassrefugee.ca/wp-content/uploads/2021/07/COMPASS-logo-300X125.png">
 		</a>
 		<a href="">
-		<img class="partners" src="https://mcca.info/wp-content/uploads/2019/08/MCCA-Logo-HR-e1571074805177.png">
+			<img class="partners" src="https://mcca.info/wp-content/uploads/2019/08/MCCA-Logo-HR-e1571074805177.png">
 		</a>
 	</div>
 	<div class="together">
 		<a href=" https://receptionhouse.ca/ ">
-		<img class="partners" src="https://www.viarail.ca/sites/all/files/corporate/account/company/reception-house-waterloo-region.jpg">
+			<img class="partners" width="300"
+				src="https://www.viarail.ca/sites/all/files/corporate/account/company/reception-house-waterloo-region.jpg">
 		</a>
 		<a href="https://www.volunteerwr.ca/">
-		<img class="partners"  id ="reception" src="https://pbs.twimg.com/profile_images/963063294557745152/-yJr0AyY.jpg">
+			<img class="partners" id="reception"
+				src="https://pbs.twimg.com/profile_images/963063294557745152/-yJr0AyY.jpg">
 		</a>
 	</div>
 
-<div class="container"><h1 class="why_us">We Were Featured In...</h1></div>	
+	<div class="container">
+		<h1 class="why_us">We Were Featured In...</h1>
+	</div>
 	<div class="together" id="move2">
 		<!-- <a href="https://www.cbc.ca/news/canada/kitchener-waterloo/homework-hub-waterloo-region-tutoring-service-1.5998007"> -->
-			<img class="featured" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/CBC_News_Logo.svg/1200px-CBC_News_Logo.svg.png">
+		<img class="featured"
+			src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/CBC_News_Logo.svg/1200px-CBC_News_Logo.svg.png">
 		<!-- </a> -->
-<!-- 		<a href=""> -->
-			<img class="featured" src="http://radioadminassets.rogersdigitalmedia.com/uploads/7p3bMTQz.png">
-<!-- 		</a> -->
+		<!-- 		<a href=""> -->
+		<img class="featured" src="http://radioadminassets.rogersdigitalmedia.com/uploads/7p3bMTQz.png">
+		<!-- 		</a> -->
 	</div>
 
 
-<div class="container"><h1 class="why_us">How We Function...</h1></div>	
-<div id="container_5">
-	<div class="containers_p" data-aos="fade-right">
-		<img class="icons" src="https://image.flaticon.com/icons/png/128/167/167707.png">
-		<h3 class="ssc">We are tutoring</h3><br>
-		<h2>Grades<mark> 1 - 7 </mark></h2>
-	</div>
-	<div class="containers_p"data-aos="fade-right">
-		<img class="icons" src="https://image.flaticon.com/icons/png/128/2972/2972531.png">
-		<h3 class="ssc">Each session is</h3><br>
-		<h2><mark>45 minutes </mark>long</h2>
-	</div>
-	<div class="containers_p" data-aos="fade-right">
-		<img class="icons" src="https://image.flaticon.com/icons/png/128/972/972260.png">
-		<h3 class="ssc">Each subject is being tutored for</h3><br>
-		<h2><mark>8 sessions</mark></h2>
-	</div>
-	<div class="containers_p" data-aos="fade-right">
-		<img class="icons"src="https://image.flaticon.com/icons/png/128/2702/2702069.png">
-		<h3 class="ssc">You can sign up for <span>3 subjects at a time</h3><br>
-		<h2>up to <mark>3 subjects</mark> at a time</h2>
-	</div>
-</div>
-<div class="container"><h1 class="hh">Enroll Now!</h1></div>
-<a onclick="enrollSc()" id="hh1">Enroll Now!</a>
-<div class="container_2" data-aos="up">
-	<div class="containers" id="first" data-aos="fade-up">
-		<h2>Math</h2>
-		<img class="subjects"  src="https://image.flaticon.com/icons/png/128/1739/1739515.png">
-		<h4>Price: FREE</h4>
-	</div>
-	<div class="containers" id="second" data-aos="fade-up">
-		<h2>Science</h2>
-		<img class="subjects"  src="https://image.flaticon.com/icons/png/128/3035/3035512.png">
-		<h4>Price: FREE</h4>	
-	</div>
-	<div class="containers" id="third" data-aos="fade-up">
-		<h2>English</h2>
-		<img class="subjects" src="https://image.flaticon.com/icons/png/128/1902/1902726.png">
-		<h4>Price: FREE</h4>	
-	</div>
-	<div class="containers" id="fourth" data-aos="fade-up">
-		<h2>French</h2>
-		<img class="subjects" src="https://image.flaticon.com/icons/png/128/3898/3898007.png">
-		<h4>Price: FREE</h4>
-	</div>
-</div>
-
-<div class="container_2" data-aos="up">
-<div class="containers" id="fifth" data-aos="fade-up">
-		<h2>Mandarin</h2>
-		<img class="subjects" src="https://image.flaticon.com/icons/png/128/646/646585.png">
-		<h4>Price: FREE</h4>
-	</div>
-
-	<div class="containers" id="sixth" data-aos="fade-up">
-		<h2>Geography</h2>
-		<img class="subjects" src="https://image.flaticon.com/icons/png/128/921/921448.png">
-		<h4>Price: FREE</h4>
-	</div>
-
-	<div class="containers" id="seventh" data-aos="fade-up">
-		<h2>Intro Programs</h2>
-		<img class="subjects" src="https://image.flaticon.com/icons/png/128/2643/2643368.png"><br>
-		<a href="#intro">
-		<button typ="button" class="lrnm">Learn More</button>
-		</a>
- 	</div>
-</div>
-
-<div id="container_7">
-	<h1>Become a HomeworkHub Student Today!</h1>
-	<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeCJdNKBQHUi_8bKE3GW6stMa2GuQe3DyfDc2KEGRVBNjufFg/viewform?embedded=true" width="100%" height="520" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-</div>
-
-<script>
-	function enrollSc(){
-		var form = document.getElementById('container_7');
-		let button = document.querySelector(".button");
-		if (form.style.display === 'none') {
-			form.style.display = 'block';
-			button.disabled = true;
-		}else{
-			form.style.display = 'none';
-			button.disabled = false;
-		}
-	};
-	function enrollTr(){
-		var form_2 = document.getElementById('container_8');
-		if(form_2.style.display === 'none') {
-			form_2.style.display = 'block';
-			form.style.display = 'block';
-			document.getElementById('enroll').disabled = true;
-		 }else{
-			form_2.style.display = 'none';
-			document.getElementById('enroll').disabled = false;
-		}
-	};
-</script>
-
-<div class="volunteer" data-aos="fade-up">
-<div class="container_4">
-		<h3 id="vol">Need Volunteering Hours?<br>Become a Tutor!</h3>
-		<h2>Why You Should Join</h2>
-		<p>Are you looking to work with younger children and help our community while gaining volunteer hours? Under current circumstances, it's difficult to find ways to get Volunteer Hours as all the usual institutions are either closed or fully booked. By joining HomeworkHub, not only are you assisting someone that might be struggling with school, earning volunteer hours, AND building up your university resume, but you are also given the opportunity to develop patience, leadership and communication skills all while staying safe! </p>
-		<h2>Task Description</h2>
-		<p>After the application process, you will be paired with an elementary student and have 45 minute online tutoring sessions with them over a span of 8 weeks.</p>
-		<h2>During These Session You Will Be:</h2>
-		<ul>
-			<li>Tutoring your students on your assigned subjects</li>
-			<li>Assisting them with any questions or assignments they may have</li>
-			<li>Logging your time!</li>
-		</ul>
-		<h2>Requirements</h2>
-		<ul>
-			<li>At least 14 years old or be in high school</li>
-			<li>Commitmentment and dedication to the task</li>
-			<li>Must be comfortable working with kids and pre-teens</li>
-			<li>Good grades and communication skills are necessary!</li>
-		</ul>
-		<button onclick="enrollTr()" class="reg">Register</button>
-	</div>
-	<img class="work" src="work2.svg" data-aos="fade-up">
 	<div class="container">
-			</div>
+		<h1 class="why_us">How We Function...</h1>
+	</div>
+	<div id="container_5">
+		<div class="containers_p" data-aos="fade-right">
+			<img class="icons" src="https://image.flaticon.com/icons/png/128/167/167707.png">
+			<h3 class="ssc">We are tutoring</h3><br>
+			<h2>Grades<mark> 1 - 7 </mark></h2>
+		</div>
+		<div class="containers_p" data-aos="fade-right">
+			<img class="icons" src="https://image.flaticon.com/icons/png/128/2972/2972531.png">
+			<h3 class="ssc">Each session is</h3><br>
+			<h2><mark>45 minutes </mark>long</h2>
+		</div>
+		<div class="containers_p" data-aos="fade-right">
+			<img class="icons" src="https://image.flaticon.com/icons/png/128/972/972260.png">
+			<h3 class="ssc">Each subject is being tutored for</h3><br>
+			<h2><mark>8 sessions</mark></h2>
+		</div>
+		<div class="containers_p" data-aos="fade-right">
+			<img class="icons" src="https://image.flaticon.com/icons/png/128/2702/2702069.png">
+			<h3 class="ssc">You can sign up for <span>3 subjects at a time</h3><br>
+			<h2>up to <mark>3 subjects</mark> at a time</h2>
+		</div>
+	</div>
+	<div class="container">
+		<h1 class="hh">Enroll Now!</h1>
+	</div>
+	<a onclick="enrollSc()" id="hh1">Enroll Now!</a>
+	<div class="container_2" data-aos="up">
+		<div class="containers" id="first" data-aos="fade-up">
+			<h2>Math</h2>
+			<img class="subjects" src="https://image.flaticon.com/icons/png/128/1739/1739515.png">
+			<h4>Price: FREE</h4>
+		</div>
+		<div class="containers" id="second" data-aos="fade-up">
+			<h2>Science</h2>
+			<img class="subjects" src="https://image.flaticon.com/icons/png/128/3035/3035512.png">
+			<h4>Price: FREE</h4>
+		</div>
+		<div class="containers" id="third" data-aos="fade-up">
+			<h2>English</h2>
+			<img class="subjects" src="https://image.flaticon.com/icons/png/128/1902/1902726.png">
+			<h4>Price: FREE</h4>
+		</div>
+		<div class="containers" id="fourth" data-aos="fade-up">
+			<h2>French</h2>
+			<img class="subjects" src="https://image.flaticon.com/icons/png/128/3898/3898007.png">
+			<h4>Price: FREE</h4>
+		</div>
+	</div>
+
+	<div class="container_2" data-aos="up">
+		<div class="containers" id="fifth" data-aos="fade-up">
+			<h2>Mandarin</h2>
+			<img class="subjects" src="https://image.flaticon.com/icons/png/128/646/646585.png">
+			<h4>Price: FREE</h4>
 		</div>
 
-<div id="container_8">
-	<h1>Become a HomeworkHub Tutor Today!</h1>
-	<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSecAWrA9XmRFuKeeElm8SS5E09MsU5nLyrujhs0FRg2w1Glnw/viewform?embedded=true" width="100%" height="520" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-</div>
+		<div class="containers" id="sixth" data-aos="fade-up">
+			<h2>Geography</h2>
+			<img class="subjects" src="https://image.flaticon.com/icons/png/128/921/921448.png">
+			<h4>Price: FREE</h4>
+		</div>
+
+		<div class="containers" id="seventh" data-aos="fade-up">
+			<h2>Intro Programs</h2>
+			<img class="subjects" src="https://image.flaticon.com/icons/png/128/2643/2643368.png"><br>
+			<a href="#intro">
+				<button typ="button" class="lrnm">Learn More</button>
+			</a>
+		</div>
+	</div>
+
+	<div id="container_7">
+		<h1>Become a HomeworkHub Student Today!</h1>
+		<iframe
+			src="https://docs.google.com/forms/d/e/1FAIpQLSeCJdNKBQHUi_8bKE3GW6stMa2GuQe3DyfDc2KEGRVBNjufFg/viewform?embedded=true"
+			width="100%" height="520" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+	</div>
+
+	<script>
+		function enrollSc() {
+			var form = document.getElementById('container_7');
+			let button = document.querySelector(".button");
+			if (form.style.display === 'none') {
+				form.style.display = 'block';
+				button.disabled = true;
+			} else {
+				form.style.display = 'none';
+				button.disabled = false;
+			}
+		};
+		function enrollTr() {
+			var form_2 = document.getElementById('container_8');
+			if (form_2.style.display === 'none') {
+				form_2.style.display = 'block';
+				form.style.display = 'block';
+				document.getElementById('enroll').disabled = true;
+			} else {
+				form_2.style.display = 'none';
+				document.getElementById('enroll').disabled = false;
+			}
+		};
+	</script>
+
+	<div class="volunteer" data-aos="fade-up">
+		<div class="container_4">
+			<h3 id="vol">Need Volunteering Hours?<br>Become a Tutor!</h3>
+			<h2>Why You Should Join</h2>
+			<p>Are you looking to work with younger children and help our community while gaining volunteer hours? Under
+				current circumstances, it's difficult to find ways to get Volunteer Hours as all the usual institutions
+				are either closed or fully booked. By joining HomeworkHub, not only are you assisting someone that might
+				be struggling with school, earning volunteer hours, AND building up your university resume, but you are
+				also given the opportunity to develop patience, leadership and communication skills all while staying
+				safe! </p>
+			<h2>Task Description</h2>
+			<p>After the application process, you will be paired with an elementary student and have 45 minute online
+				tutoring sessions with them over a span of 8 weeks.</p>
+			<h2>During These Session You Will Be:</h2>
+			<ul>
+				<li>Tutoring your students on your assigned subjects</li>
+				<li>Assisting them with any questions or assignments they may have</li>
+				<li>Logging your time!</li>
+			</ul>
+			<h2>Requirements</h2>
+			<ul>
+				<li>At least 14 years old or be in high school</li>
+				<li>Commitmentment and dedication to the task</li>
+				<li>Must be comfortable working with kids and pre-teens</li>
+				<li>Good grades and communication skills are necessary!</li>
+			</ul>
+			<button onclick="enrollTr()" class="reg">Register</button>
+		</div>
+		<img class="work" src="work2.svg" data-aos="fade-up">
+		<div class="container">
+		</div>
+	</div>
+
+	<div id="container_8">
+		<h1>Become a HomeworkHub Tutor Today!</h1>
+		<iframe
+			src="https://docs.google.com/forms/d/e/1FAIpQLSecAWrA9XmRFuKeeElm8SS5E09MsU5nLyrujhs0FRg2w1Glnw/viewform?embedded=true"
+			width="100%" height="520" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+	</div>
 
 
 	<div class="mission" data-aos="fade-up">
 		<img src="mone2.svg" id="mone">
-<div class="container_6">
-	<h1>Our Mission:</h1>
-	<p>With the world currently in a pandemic and thousands of schools closed or modified, many students are forced to learn online or through a hybrid curriculum. Many children have had difficulties adjusting or keeping up with this new method of learning. There just isn't enough assistance to go around to help all students thrive in this virtual environment. We at HomeworkHub recognize the demand for extra assistance are committed to delivering free personalized online tutoring sessions to students in need of assistance. <br></p>
-	<p> With the Pandemic also comes the closing of many volunteer and community organizations as well. As a group of high school students, we also found it very difficult to help our community during these difficult times and earn volunteer hours as well. That's why we began HomeworkHub. Apart from providing free and accessible help for young students during these unprecedented times, HomeworkHub is dedicated to providing an outlet for students passionate about our community to help others, earn valuable experiences, and fill their volunteer hours. </p>
+		<div class="container_6">
+			<h1>Our Mission:</h1>
+			<p>With the world currently in a pandemic and thousands of schools closed or modified, many students are
+				forced to learn online or through a hybrid curriculum. Many children have had difficulties adjusting or
+				keeping up with this new method of learning. There just isn't enough assistance to go around to help all
+				students thrive in this virtual environment. We at HomeworkHub recognize the demand for extra assistance
+				are committed to delivering free personalized online tutoring sessions to students in need of
+				assistance. <br></p>
+			<p> With the Pandemic also comes the closing of many volunteer and community organizations as well. As a
+				group of high school students, we also found it very difficult to help our community during these
+				difficult times and earn volunteer hours as well. That's why we began HomeworkHub. Apart from providing
+				free and accessible help for young students during these unprecedented times, HomeworkHub is dedicated
+				to providing an outlet for students passionate about our community to help others, earn valuable
+				experiences, and fill their volunteer hours. </p>
+		</div>
+		<img src="mtwo2.svg" id="mone">
 	</div>
-	<img src="mtwo2.svg" id="mone">
-</div>
 
-<div id="donation">
-<div class="container_13">
-	<h1>We Need Your Help! Donate Today!</h1>
-	<h2>How to Donate?</h2>
-	<h3>Donate to us through the Paypal link below!</h3>
-	<h2>What Are the Donations Used For?</h2>
-	<ul>
-		<li>Events</li>
-		<li>Organizational platforms (such as this website!)</li>
-		<li>Teaching material</li>
-		<li>Other expenses</li>
-	</ul>
-	<a href="https://www.paypal.com/donate?business=DRPWCU5CZ3J5J&currency_code=CAD">
-	<button class="donate1">Donate Now</button>
-	</a>
-	<img src="donate.svg" class="donate">
-</div>
-<div class="container_13" id="intro">
-	<img class="new" src="https://image.flaticon.com/icons/png/128/891/891447.png">
-	<h1>Intro Programs</h1>
-	<h3>Looking to try something new? Whether you're bored in Lockdown or just looking to pick up a new hobbie, HomeworkHub's exclusive FREE introductory courses offer a wide range of subjects from Piano to Computer Science! During these introduction courses, you'll be given the opportunity to discover your chosen subject in more detail with our experienced guest speakers and even try it out for yourself! Courses are 1:30 to 2:00 hours long with a maximum of 30-50 students. </h3>
-	<!-- <h1>This Month's Intro Program:</h1>
+	<div id="donation">
+		<div class="container_13">
+			<h1>We Need Your Help! Donate Today!</h1>
+			<h2>How to Donate?</h2>
+			<h3>Donate to us through the Paypal link below!</h3>
+			<h2>What Are the Donations Used For?</h2>
+			<ul>
+				<li>Events</li>
+				<li>Organizational platforms (such as this website!)</li>
+				<li>Teaching material</li>
+				<li>Other expenses</li>
+			</ul>
+			<a href="https://www.paypal.com/donate?business=DRPWCU5CZ3J5J&currency_code=CAD">
+				<button class="donate1">Donate Now</button>
+			</a>
+			<img src="donate.svg" class="donate">
+		</div>
+		<div class="container_13" id="intro">
+			<img class="new" src="https://image.flaticon.com/icons/png/128/891/891447.png">
+			<h1>Intro Programs</h1>
+			<h3>Looking to try something new? Whether you're bored in Lockdown or just looking to pick up a new hobbie,
+				HomeworkHub's exclusive FREE introductory courses offer a wide range of subjects from Piano to Computer
+				Science! During these introduction courses, you'll be given the opportunity to discover your chosen
+				subject in more detail with our experienced guest speakers and even try it out for yourself! Courses are
+				1:30 to 2:00 hours long with a maximum of 30-50 students. </h3>
+			<!-- <h1>This Month's Intro Program:</h1>
 	<h2></h2>
 	<table>
 		<tr>
@@ -435,214 +486,244 @@ function open2() {
 	</table>
 	<a href="" class="intro_reg">Register Now</a> -->
 
-</div>
+		</div>
 
-</div>
+	</div>
 	<h1 id="team">Meet Our Team!</h1>
-<div class="container_9">
-	
-	<div class="containers_5"data-aos="fade-up">
-		<img class="teamm" id="paris" src="paris.jpg">
-		<h2>Paris Cai</h2>
-		<h4>Founder and President</h4>
-		<p class="dscr">Hi! My name is Paris and I'm a grade 11 student at WCI! I had the idea to start HomeworkHub in January as a way to help and give back to my community! In my free time, I enjoy piano, baking, skating, keeping up with politics, and fashion! I'm so excited to be working with my team and I'm looking forward to everything to come :)</p>
+	<div class="container_9">
+
+		<div class="containers_5" data-aos="fade-up">
+			<img class="teamm" id="paris" src="paris.jpg">
+			<h2>Paris Cai</h2>
+			<h4>Founder and President</h4>
+			<p class="dscr">Hi! My name is Paris and I'm a grade 11 student at WCI! I had the idea to start HomeworkHub
+				in January as a way to help and give back to my community! In my free time, I enjoy piano, baking,
+				skating, keeping up with politics, and fashion! I'm so excited to be working with my team and I'm
+				looking forward to everything to come :)</p>
+		</div>
+
+		<div class="containers_5" data-aos="fade-up">
+			<img class="teamm" id="phoebe" src="pheobe.jpg">
+			<h2>Phoebe Luo</h2>
+			<h4>Co-President </h4>
+			<p class="dscr">Hi! I’m Phoebe and I’m currently in grade 12 at Cameron Heights. I love to paint and thrift
+				in my free time. I joined this organization to help others however I can. I’m so exited to work with
+				such caring people to make a difference in our community!</p>
+		</div>
+
+		<div class="containers_5" data-aos="fade-up">
+			<img class="teamm" id="mariya" src="me.jpg">
+			<h2>Mariya Turetska</h2>
+			<h4>Co-Vice President and Technical Director </h4>
+			<p class="dscr">Hi! My name is Mariya and I am currently a grade 11 student at Waterloo Collegiate
+				Institute. I love playing piano and composing my own music. My favourite subjects are math and science.
+				I enjoy reading and hiking. I am very excited to be working at HomeworkHub and helping students in our
+				community!</p>
+		</div>
+	</div>
+	<div class="container_9">
+		<div class="containers_5" data-aos="fade-up">
+			<img class="teamm" id="sammi" src="sammi.jpg">
+			<h2>Sammi Wang</h2>
+			<h4>Co-Vice President and Treasurer</h4>
+			<p class="dscr">Hi my name's Sammi and I'm a grade 11 student at WCI! I joined HoneworkHub so I can help out
+				the community since I know how hard virtual school is. I like to play badminton, swim and debate, and in
+				my free time I enjoy drawing while listening to audiobooks!</p>
+		</div>
+
+		<div class="containers_5" data-aos="fade-up">
+			<img class="teamm" id="leah" src="leah.jpg">
+			<h2>Leah Cai</h2>
+			<h4>Students and Volunteer Director </h4>
+			<p class="dscr">Hi, my name is Leah and I'm an 11th grade student at Pere-Rene de Galinee, which is a fully
+				french school in Cambridge. I can speak three languages: French, English and Chinese! I like to play
+				basketball and badminton and I am passionate about helping others and my community in any way I can.
+			</p>
+		</div>
+		<div class="containers_5" data-aos="fade-up">
+			<img class="teamm" id="adrian" src="adrian.jpg">
+			<h2>Adrian Golab</h2>
+			<h4>Technical Assistant and Advisor </h4>
+			<p class="dscr">Hello! My name is Adrian and I am a 9th grader at Waterloo Collegiate Institute. I joined
+				HomeworkHub to help give back to my community and to help others discover the joys of learning. In my
+				free time, I play violin and piano, and I love playing basketball. I am excited to join this amazing
+				team and to help the students in my community.</p>
+		</div>
 	</div>
 
-	<div class="containers_5"data-aos="fade-up">
-		<img class="teamm" id="phoebe" src="pheobe.jpg">
-		<h2>Phoebe Luo</h2>
-		<h4>Co-President </h4>
-		<p class="dscr">Hi! I’m Phoebe and I’m currently in grade 12 at Cameron Heights. I love to paint and thrift in my free time. I joined this organization to help others however I can. I’m so exited to work with such caring people to make a difference in our community!</p>
+	<div class="container_9" data-aos="fade-up">
+		<div class="containers_5" data-aos="fade-up">
+			<img class="teamm" id="mychau" src="mychau.jpg">
+			<h2>MyChau Tight</h2>
+			<h4>Co-Pairing Manager</h4>
+			<p class="dscr">Hi there! My name is Mỹ Châu. I am in 10th grade at Waterloo Collegiate Institute. My
+				favourite subject is science and goal is to become a specialized doctor/surgeon! When I am not busy
+				doing schoolwork, I like to bake, workout, watch T.V, and help out in my community. I joined HomeworkHub
+				to gives back to the community and i'm so excited for the future and potential of HomeworkHub!</p>
+		</div>
+		<div class="containers_5" data-aos="fade-up">
+			<img class="teamm" id="tina" src="tina.png">
+			<h2>Tahmina Faez</h2>
+			<h4>Co-Pairing Manager</h4>
+			<p class="dscr">Hello! My name is Tahmina and I am currently a 11th grade at Kitchener Waterloo Collegiate
+				and Vocational School. I enjoy travelling, biking, and spending time with my friends and family. I am
+				passionate about helping others and giving back to the community. I am very excited to be a part of the
+				HomeworkHub team and look forward to making a difference by doing something fulfilling!</p>
+		</div>
+		<div class="containers_5" data-aos="fade-up">
+			<img class="teamm" id="fiona" src="fiona.jpg">
+			<h2>Fiona MacDougall</h2>
+			<h4>Creative Design Manager</h4>
+			<p class="dscr">Hi I’m Fiona and I’m currently a Gr. 11 student at sjam. In my free time, I enjoy playing
+				music and hanging out w my friends. I also regularly participate in speech competitions in Chinese,
+				French and English. I am super excited to be apart of the HomeworkHub team and give back to the
+				community!</p>
+		</div>
 	</div>
+	<div class="container_9" data-aos="fade-up">
+		<div class="containers_5" data-aos="fade-up">
+			<img class="teamm" id="angela" src="angela.jpeg">
+			<h2>Angela Zielke-Stray</h2>
+			<h4>Marketing Manager</h4>
+			<p class="dscr">Hi there! My name is Angela and I am a grade twelve student at KCI. In my free time I love
+				to road bike, walk my two dogs, and ski. I’m excited to be a part of HomeworkHub and help other students
+				in K-W as much as I can :) </p>
+		</div>
+	</div>
+	<h1 class="team" data-aos="fade-up">Frequently Asked Questions:</h1>
 
-	<div class="containers_5"data-aos="fade-up">
-		<img class="teamm" id="mariya" src="me.jpg">
-		<h2>Mariya Turetska</h2>
-		<h4>Co-Vice President and Technical Director </h4>
-		<p class="dscr">Hi! My name is Mariya and I am currently a grade 11 student at Waterloo Collegiate Institute. I love playing piano and composing my own music. My favourite subjects are math and science. I enjoy reading and hiking. I am very excited to be working at HomeworkHub and helping students in our community!</p>
-	</div>
-</div>
-<div class="container_9">
-	<div class="containers_5"data-aos="fade-up">
-		<img class="teamm" id="sammi" src="sammi.jpg">
-		<h2>Sammi Wang</h2>
-		<h4>Co-Vice President and Treasurer</h4>
-		<p class="dscr">Hi my name's Sammi and I'm a grade 11 student at WCI! I joined HoneworkHub so I can help out the community since I know how hard virtual school is. I like to play badminton, swim and debate, and in my free time I enjoy drawing while listening to audiobooks!</p>
-	</div>
+	<div id="qna" data-aos="fade-right">
 
-	<div class="containers_5"data-aos="fade-up">
-		<img class="teamm" id="leah" src="leah.jpg">
-		<h2>Leah Cai</h2>
-		<h4>Students and Volunteer Director </h4>
-		<p class="dscr">Hi, my name is Leah and I'm an 11th grade student at Pere-Rene de Galinee, which is a fully french school in Cambridge. I can speak three languages: French, English and Chinese! I like to play basketball and badminton and I am passionate about helping others and my community in any way I can. </p>
-	</div> 
-	<div class="containers_5"data-aos="fade-up">
-		<img class="teamm" id="adrian" src="adrian.jpg">
-		<h2>Adrian Golab</h2>
-		<h4>Technical Assistant and Advisor </h4>
-		<p class="dscr">Hello! My name is Adrian and I am a 9th grader at Waterloo Collegiate Institute. I joined HomeworkHub to help give back to my community and to help others discover the joys of learning. In my free time, I play violin and piano, and I love playing basketball. I am excited to join this amazing team and to help the students in my community.</p>
-	</div>
-</div>
+		<div id="question1" class="questions" data-aos="fade-up" onclick="functionOne()">
+			<h4>Can I sign up for more than one subject?</h4>
+			<div id="qone">
+				<p>Absolutely! You can sign up for a total of 3 subjects at a time, although tutor availability may vary
+					from subject to subject.</p>
+			</div>
+		</div>
 
-<div class="container_9"data-aos="fade-up">
-	<div class="containers_5"data-aos="fade-up">
-		<img class="teamm" id="mychau" src="mychau.jpg">
-		<h2>MyChau Tight</h2>
-		<h4>Co-Pairing Manager</h4>
-		<p class="dscr">Hi there! My name is Mỹ Châu. I am in 10th grade at Waterloo Collegiate Institute. My favourite subject is science and goal is to become a specialized doctor/surgeon! When I am not busy doing schoolwork, I like to bake, workout, watch T.V, and help out in my community. I joined HomeworkHub to gives back to the community and i'm so excited for the future and potential of HomeworkHub!</p>
-	</div>
-	<div class="containers_5"data-aos="fade-up">
-		<img class="teamm" id="tina" src="tina.png">
-		<h2>Tahmina Faez</h2>
-		<h4>Co-Pairing Manager</h4>
-		<p class="dscr">Hello! My name is Tahmina and I am currently a 11th grade at Kitchener Waterloo Collegiate and Vocational School. I enjoy travelling, biking, and spending time with my friends and family. I am passionate about helping others and giving back to the community. I am very excited to be a part of the HomeworkHub team and look forward to making a difference by doing something fulfilling!</p>
-	</div>
-	<div class="containers_5"data-aos="fade-up">
-		<img class="teamm" id="fiona" src="fiona.jpg">
-		<h2>Fiona MacDougall</h2>
-		<h4>Creative Design Manager</h4>
-		<p class="dscr">Hi I’m Fiona and I’m currently a Gr. 11 student at sjam. In my free time, I enjoy playing music and hanging out w my friends. I also regularly participate in speech competitions in Chinese, French and English. I am super excited to be apart of the HomeworkHub team and give back to the community!</p>
-	</div>
-</div>
-<div class="container_9"data-aos="fade-up">
-	<div class="containers_5"data-aos="fade-up">
-		<img class="teamm" id="angela" src="angela.jpeg">
-		<h2>Angela Zielke-Stray</h2>
-		<h4>Marketing Manager</h4>
-		<p class="dscr">Hi there! My name is Angela and I am a grade twelve student at KCI. In my free time I love to road bike, walk my two dogs, and ski. I’m excited to be a part of HomeworkHub and help other students in K-W as much as I can :) </p>
-	</div>
-</div>
-<h1 class="team" data-aos="fade-up">Frequently Asked Questions:</h1>
+		<div id="question2" class="questions" data-aos="fade-up" onclick="functionTwo()">
+			<h4>My 8 weeks are up. Can I sign up again?</h4>
+			<div id="qtwo">
+				<p> Yes! You can sign up as many times as you want! Again, availability may vary.</p>
+			</div>
+		</div>
 
-<div id="qna" data-aos="fade-right">
+		<div id="question3" class="questions" data-aos="fade-up" onclick="functionThree()">
+			<h4>My Tutor/Student is unresponsive, what do I do?</h4>
+			<div id="qthree">
+				<p> Please email us! We'll get in touch with the person and sort it out. If they are still unresponsive,
+					we'll assign you to someone new!</p>
+			</div>
+		</div>
 
-<div id="question1" class="questions"  data-aos="fade-up" onclick="functionOne()">
-		<h4>Can I sign up for more than one subject?</h4>
-	<div id="qone">
-		<p>Absolutely! You can sign up for a total of 3 subjects at a time, although tutor availability may vary from subject to subject.</p>
-	</div>
-	</div>
+		<div id="question4" class="questions" data-aos="fade-up" onclick="functionFour()">
+			<h4>I finished my sessions! What do I do now?</h4>
+			<div id="qfour">
+				<p> Congratulations! Log in your hours and we'll contact you when we have someone new for you!</p>
+			</div>
+		</div>
 
-	<div id="question2" class="questions"  data-aos="fade-up" onclick="functionTwo()">
-		<h4>My 8 weeks are up. Can I sign up again?</h4>
-	<div id="qtwo">
-		<p> Yes! You can sign up as many times as you want! Again, availability may vary.</p>
-	</div>
-	</div>
+		<div id="question5" class="questions" data-aos="fade-up" onclick="functionFive()">
+			<h4>I signed up for HomeworkHub but no one has been in touch?</h4>
+			<div id="qfive">
+				<p> Please check your spam inbox! Our emails sometimes wind up in there. If you're still having
+					problems, feel free to email us and we'll sort it out!</p>
+			</div>
+		</div>
 
-	<div id="question3" class="questions"  data-aos="fade-up" onclick="functionThree()">
-		<h4>My Tutor/Student is unresponsive, what do I do?</h4>
-	<div id="qthree">
-		<p> Please email us! We'll get in touch with the person and sort it out. If they are still unresponsive, we'll assign you to someone new!</p>
 	</div>
-	</div>
-
-	<div id="question4" class="questions"  data-aos="fade-up" onclick="functionFour()">
-		<h4>I finished my sessions! What do I do now?</h4>
-	<div id="qfour">
-		<p> Congratulations! Log in your hours and we'll contact you when we have someone new for you!</p>
-	</div>
-	</div>
-
-	<div id="question5" class="questions"  data-aos="fade-up" onclick="functionFive()">
-		<h4>I signed up for HomeworkHub but no one has been in touch?</h4>
-	<div id="qfive">
-		<p> Please check your spam inbox! Our emails sometimes wind up in there. If you're still having problems, feel free to email us and we'll sort it out!</p>
-	</div>
-	</div>
-	
-</div>
 
 	<script>
 		function functionOne() {
-				var x = document.getElementById("qone");
-				if (x.style.display === "none"){
-					x.style.display = "block";
-				} else {
-					x.style.display = "none";
-					// document.getElementById('opening').src="https://image.flaticon.com/icons/png/128/814/814031.png";
-				}
+			var x = document.getElementById("qone");
+			if (x.style.display === "none") {
+				x.style.display = "block";
+			} else {
+				x.style.display = "none";
+				// document.getElementById('opening').src="https://image.flaticon.com/icons/png/128/814/814031.png";
 			}
-			function functionTwo() {
-				var x = document.getElementById("qtwo");
-				if (x.style.display === "none"){
-					x.style.display = "block";
-				} else {
-					x.style.display = "none";
-				}
+		}
+		function functionTwo() {
+			var x = document.getElementById("qtwo");
+			if (x.style.display === "none") {
+				x.style.display = "block";
+			} else {
+				x.style.display = "none";
 			}
-			function functionThree() {
-				var x = document.getElementById("qthree");
-				if (x.style.display === "none"){
-					x.style.display = "block";
-				} else {
-					x.style.display = "none";
-				}
+		}
+		function functionThree() {
+			var x = document.getElementById("qthree");
+			if (x.style.display === "none") {
+				x.style.display = "block";
+			} else {
+				x.style.display = "none";
 			}
-			function functionFour() {
-				var x = document.getElementById("qfour");
-				if (x.style.display === "none"){
-					x.style.display = "block";
-				} else {
-					x.style.display = "none";
-				}
+		}
+		function functionFour() {
+			var x = document.getElementById("qfour");
+			if (x.style.display === "none") {
+				x.style.display = "block";
+			} else {
+				x.style.display = "none";
 			}
-			function functionFive() {
-				var x = document.getElementById("qfive");
-				if (x.style.display === "none"){
-					x.style.display = "block";
-				} else {
-					x.style.display = "none";
-				}
+		}
+		function functionFive() {
+			var x = document.getElementById("qfive");
+			if (x.style.display === "none") {
+				x.style.display = "block";
+			} else {
+				x.style.display = "none";
 			}
+		}
 	</script>
-<div class="footer">
-	<h1 class="team">HomeworkHub</h1>
-<div class="boxes">
-	<div class="box1">
-		<h2 class="footl">Links</h2>
-	<a href="index.html">
-		<button type="button" class="footl">Home</button><br>
-	</a>
-	<a href="#abt">
-		<button type="button" class="footl">About</button><br>
-	</a>
-	<a href="#container_7">
-		<button onclick="enrollSc()" class="footl">Registration</button><br>
-	</a>
-	<a href="#first">
-		<button type="button" class="footl">Courses</button><br>
-	</a>
-	<a href="#paris">
-		<button type="button" class="footl">Team</button><br>
-	</a>
-	<a href="#question1">
-		<button type="button" class="footl">Questions</button><br>
-	</a>
-	</div>
+	<div class="footer">
+		<h1 class="team">HomeworkHub</h1>
+		<div class="boxes">
+			<div class="box1">
+				<h2 class="footl">Links</h2>
+				<a href="index.html">
+					<button type="button" class="footl">Home</button><br>
+				</a>
+				<a href="#abt">
+					<button type="button" class="footl">About</button><br>
+				</a>
+				<a href="#container_7">
+					<button onclick="enrollSc()" class="footl">Registration</button><br>
+				</a>
+				<a href="#first">
+					<button type="button" class="footl">Courses</button><br>
+				</a>
+				<a href="#paris">
+					<button type="button" class="footl">Team</button><br>
+				</a>
+				<a href="#question1">
+					<button type="button" class="footl">Questions</button><br>
+				</a>
+			</div>
 
-	<div class="box2">
-		<h2 class="footl">Socials & Contact</h2>
-	<a href="https://www.instagram.com/hh.tutoring/">
-		<button type="button" class="footl">Instagram</button><br>
-	</a>
-		<!-- <button type="button" class="footl">Facebook</button><br> -->
-	<a href="mailto:tutoring.homeworkhub@gmail.com">
-		<button type="button" class="footl">Email</button><br>
-	</a>
-	</div>
+			<div class="box2">
+				<h2 class="footl">Socials & Contact</h2>
+				<a href="https://www.instagram.com/hh.tutoring/">
+					<button type="button" class="footl">Instagram</button><br>
+				</a>
+				<!-- <button type="button" class="footl">Facebook</button><br> -->
+				<a href="mailto:tutoring.homeworkhub@gmail.com">
+					<button type="button" class="footl">Email</button><br>
+				</a>
+			</div>
 
-	<div class="box3">
-		<h2 class="footl">Copyright: Mariya Turetska, 2021</h2>
-	<a href="privacy.html">
-		<button type="button" class="footl">Privacy Terms</button><br>
-	</a>
-	<a href="terms.html">
-		<button type="button" class="footl">Terms of Use</button><br>
-	</a>
+			<div class="box3">
+				<h2 class="footl">Copyright: Mariya Turetska, 2021</h2>
+				<a href="privacy.html">
+					<button type="button" class="footl">Privacy Terms</button><br>
+				</a>
+				<a href="terms.html">
+					<button type="button" class="footl">Terms of Use</button><br>
+				</a>
+			</div>
+		</div>
 	</div>
-</div>
-</div>
 
 
 </body>
